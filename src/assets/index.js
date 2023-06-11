@@ -34,8 +34,9 @@ import bootstrap from './tech/bootstrap.png';
 import goer from './company/goer.jpeg';
 import ub from './company/ub.jpeg';
 
-import heijiajia from './heijiajia.png';
 import summarizer from './summarizer.png';
+import portfolio from './portfolio.png';
+import heijiajia from './heijiajia.png';
 import official from './official.png';
 
 export {
@@ -73,6 +74,7 @@ export {
   goer,
   ub,
   summarizer,
+  portfolio,
   heijiajia,
   official,
 };

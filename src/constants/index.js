@@ -21,6 +21,7 @@ import {
   goer,
   ub,
   summarizer,
+  portfolio,
   heijiajia,
   official,
   threejs,
@@ -160,6 +161,10 @@ const projects = [
         color: 'cyan-text-gradient',
       },
       {
+        name: 'reduxtoolkit',
+        color: 'pink-text-gradient',
+      },
+      {
         name: 'tailwind',
         color: 'blue-text-gradient',
       },
@@ -172,6 +177,29 @@ const projects = [
     source_code: true,
     source_code_link: 'https://github.com/NeoInnoLab/SummarAIzer',
     website_link: 'https://main--luminous-heliotrope-8bacf5.netlify.app/',
+  },
+  {
+    name: 'Portfolio',
+    description:
+      'Portfolio is a web application that showcases my projects and skills. It is built with React and Three.js.',
+    tags: [
+      {
+        name: 'react',
+        color: 'cyan-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'threejs',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: portfolio,
+    source_code: true,
+    source_code_link: 'https://github.com/NeoInnoLab/Portfolio-React-Threejs',
+    website_link: 'https://peaceful-valkyrie-19097f.netlify.app/',
   },
   {
     name: 'App - HeiJiaJia Go Game Classroom',

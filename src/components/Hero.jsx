@@ -14,14 +14,14 @@ const Hero = () => {
           <div className='w-2 sm:h-80 h-40 cyan-gradient'></div>
           <div className='w-2 sm:h-80 h-40 pink-gradient'></div>
         </div>
-        <div className={`font-['Rubik_Pixels']`}>
+        <div className={`font-['Poppins']`}>
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className={`text-[#00ebfe]`}>Neo</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white`}>
+          <p className={`${styles.heroSubText} text-white`}>
             I develop <span className={`text-[#00ebfe]`}>3D</span> visuals,{' '}
-            <span className={`text-[#00ebfe]`}>VR</span>{' '}
-            <br className='sm:block hidden'></br> content and{' '}
+            <span className={`text-[#00ebfe]`}>VR</span> content
+            <br className='sm:block hidden'></br> and{' '}
             <span className={`text-[#00ebfe]`}>web</span> applications.
           </p>
         </div>
@@ -44,7 +44,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: 'loop',
               }}
-              className='w-2 h-3 bg-[#b26bc6] rounded-full mb-1'
+              className='w-2 h-3 bg-[#e1aaf0] rounded-full mb-1'
             />
           </div>
         </a>

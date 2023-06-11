@@ -21,7 +21,7 @@ const ProjectCard = ({
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         option={{ max: 45, scale: 1, speed: 450 }}
-        className='bg-tertiary p-5 rounded-2xl w-full md:min-h-[500px]'
+        className='bg-tertiary p-5 rounded-2xl w-full md:min-h-[512px]'
       >
         <div
           onClick={() => window.open(website_link, '_blank')}
