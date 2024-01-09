@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close, github } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -16,10 +16,10 @@ const Navbar = () => {
       setScrollPosition(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -31,53 +31,64 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-gradient-to-br from-black from-50% to-black-200 to-50%`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
-            setActive('');
+            setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white-100 text-[18px] font-bold cursor-pointer flex'>
-            Neo Innovation Lab &nbsp;
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white-100 text-[18px] font-bold cursor-pointer flex">
+            NeoInnoLab &nbsp;
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
-                active === link.title ? 'text-pink' : 'text-white-100'
+                active === link.title ? "text-pink" : "text-white-100"
               } hover:text-blue text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <a
+            href="https://github.com/NeoInnoLab"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={github}
+              alt="github"
+              className="w-9 h-9 object-contain cursor-pointer"
+            />
+          </a>
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-6 h-6 object-contain cursor-pointer '
+            alt="menu"
+            className="w-6 h-6 object-contain cursor-pointer "
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
-              !toggle ? 'hidden' : 'flex'
-            } p-4 bg-gradient-to-br from-black from-30% to-black-200 to-70% absolute top-[72px] right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              !toggle ? "hidden" : "flex"
+            } p-4  absolute bg-gradient-to-br from-black-300 from-30% to-black-100 to-70 top-[72px] right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end item-start flex-col gap-4'>
+            <ul className="list-none flex justify-end item-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? 'text-white' : 'text-secondary'
+                    active === link.title ? "text-white" : "text-black-600"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -87,6 +98,17 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <a
+                href="https://github.com/NeoInnoLab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-6 h-6 object-contain cursor-pointer"
+                />
+              </a>
             </ul>
           </div>
         </div>
