@@ -41,13 +41,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-white-100 tex-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in JavaScript, and
-        expertise in frameworks like Vue.js, React.js and Next.js. My passion
-        lies in transforming machine learning data into user-friendly and
-        valuable products. I have the skills to turn data-driven insights into
-        actionable solutions. If you're looking for a dedicated and innovative
-        partner to help you turn your data into a powerful product, let's
-        connect and bring your ideas to life.
+        I'm a skilled software engineer with experience in React.js, Vue.js, and
+        Next.js. My passion lies in front-end engineering, full-stack
+        development, agile methodologies, and pushing the boundaries of
+        technology.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">

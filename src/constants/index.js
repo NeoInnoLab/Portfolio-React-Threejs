@@ -45,17 +45,18 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web App Developer",
-    icon: notebook,
+    title: "Frontend Engineer",
+    icon: phone,
   },
   {
     title: "Full Stack Developer",
     icon: backend,
   },
   {
-    title: "Frontend Developer",
-    icon: phone,
+    title: "Web App Developer",
+    icon: notebook,
   },
+
   // {
   //   title: "UX/UI Designer",
   //   icon: creator,
@@ -93,30 +94,30 @@ const technologies = [
 const experiences = [
   {
     title: "Vue.js Developer",
-    company_name: "Goer Live - Largest Go game Education AI Start-up Company",
+    company_name: "GoerTech Inc. - Top 1 Go Chess Startup in Taiwan ",
     icon: goer,
     iconBg: "white",
     date: "August 2020 - August 2022",
     points: [
-      "Developed and successfully published of an AI web application using Vue.js and BootStrap UI/UX design.",
-      "Collaborated with cross-functional teams including designers, product managers, and marketing teams to ensure an efficient, error-free application.",
-      "Implemented responsive design and ensuring cross-browser compatibility.",
-      "Participated in code reviews and providing constructive feedback to other developers.",
+      "Built the Hybrid App from scratch with responsive UI using JavaScript (Vue.js), HTML, and CSS.",
+      "Developed the official website, allowing clients to browse courses and make payments.",
+      "Reduced time to render the app by 70% by optimizing code, resources, and plugins.",
+      "Implemented Jest and Mocha unit testing to achieve 90% code coverage.",
+      "Developed 30+ reusable components and interactive features with RESTful APIs.",
     ],
     company_url: "https://goer.live/",
   },
   {
     title: "Backend Developer",
-    company_name:
-      "UB CSMS Lab - The Computational and Statistical Material Science Lab",
+    company_name: "SUNY Buffalo - CSMS Lab",
     icon: ub,
     iconBg: "#015BBB",
     date: "March 2023 - Current",
     points: [
-      "Established an AI cloud service for autonomous robot systems using Python Flask, AWS and OpenStack.",
-      "Collaborated with a remote experimentalist group to execute a closed-loop autonomous experimental campaign.",
-      "Developed and tested new AI methods to drive autonomous platforms.",
-      "Hosted specialized computational resources for general use.",
+      "Built a Cloud-based ML Service by AWS and OpenStack for the autonomous robots.",
+      "Deployed Python Flask with Docker in cloud environments for efficient, scalable deployment.",
+      "Created Swagger API documentation for users and teams.",
+      "Collaborated seamlessly with a remote experimentalist group.",
     ],
     company_url:
       "https://engineering.buffalo.edu/materials-design-innovation/research/facilities.html",
@@ -185,7 +186,7 @@ const projects = [
   //   website_link: "https://peaceful-valkyrie-19097f.netlify.app/",
   // },
   {
-    name: "App - HeiJiaJia Go Game Classroom",
+    name: "HeiJiaJia Go Chess Classroom Web App",
     description:
       "Web application that enables users to learn the game of Go from the beginner level, watch videos of HeiJiaJia - the world champion Go player, and practice their strategies by playing against AI opponents.",
     tags: [
@@ -209,9 +210,9 @@ const projects = [
       "https://app.heijiajia.com.tw/?_branch_match_id=1165116466618771656&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz0jNzMpMBCLdknK9xIICvZzMvGz94AzjRNMUd6OAzCQAHigR8CkAAAA%3D#/login",
   },
   {
-    name: "Official Website - HeiJiaJia Go Game Classroom",
+    name: "HeiJiaJia Go Chess Classroom Official Website",
     description:
-      "Website serves as a guide for users interested in the HeiJiaJia Go Game Classroom App. It offers detailed information about the app's features and benefits, allowing users to make informed decisions",
+      "Website serves as a guide for users interested in the HeiJiaJia Go Chess Classroom App. It offers detailed information about the app's features and benefits, allowing users to make informed decisions",
     tags: [
       {
         name: "vue",

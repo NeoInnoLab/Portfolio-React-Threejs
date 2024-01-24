@@ -19,9 +19,9 @@ const Hero = () => {
             Hi, I'm <span className={`text-[#8ae9f0]`}>Shanda</span>
           </h1>
           <p className={`${styles.heroSubText} text-white`}>
-            I develop <span className={`text-[#8ae9f0]`}>3D</span> visuals,{" "}
-            <span className={`text-[#8ae9f0]`}>AI</span> integration
-            <br className="sm:block hidden"></br> into{" "}
+            I develop <span className={`text-[#8ae9f0]`}>Front</span> End,{" "}
+            <span className={`text-[#8ae9f0]`}>Full</span> Stack
+            <br className="sm:block hidden"></br> for{" "}
             <span className={`text-[#8ae9f0]`}>web</span> applications.
           </p>
         </div>
